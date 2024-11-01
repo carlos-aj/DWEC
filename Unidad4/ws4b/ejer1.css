@@ -1,9 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(44, 142, 153); 
-    color: rgb(255, 255, 255); 
+    background-color: rgb(44, 142, 153);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 0;
+    height: 100vh;
 }
 
 #cabecera {
@@ -35,15 +42,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
- 
     background-color: white;
 }
 
 button {
     font-size: 1rem;
     padding: 10px 15px;
-    background-color: rgb(242, 242, 242); 
-    color: rgb(44, 142, 153); 
+    background-color: rgb(242, 242, 242);
+    color: rgb(44, 142, 153);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -52,34 +58,35 @@ button {
 }
 
 button:hover {
-    background-color: rgb(224, 224, 224); 
+    background-color: rgb(224, 224, 224);
 }
 
 button.active {
-    background-color: rgb(44, 142, 153); 
-    color: rgb(255, 255, 255); 
+    background-color: rgb(44, 142, 153);
+    color: rgb(255, 255, 255);
 }
-
 
 #contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    margin: auto;
-    width: 320px; 
+    justify-items: stretch;
+    align-items: stretch;
+    height: calc(100vh - 150px);
     background-color: rgb(25, 23, 23);
+    gap: 0; 
+    padding: 0;
 }
 
 .cubo {
-    width: 100px;
-    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-    background-color: rgb(173, 216, 230); 
+    background-color: rgb(173, 216, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
 }
-
 
 #resultado {
     font-size: 1.5rem;
