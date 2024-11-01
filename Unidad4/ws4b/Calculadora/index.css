@@ -1,0 +1,74 @@
+/* Centrado de la calculadora */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Estilo de la calculadora */
+table {
+    border-collapse: collapse;
+    width: 240px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilo del display */
+#resultado {
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+/* Estilos de los botones */
+td {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+/* Estilo de los botones de operaciones */
+#suma, #resta, #multiplicacion, #division {
+    background-color: #e0e0e0;
+}
+
+/* Estilo del botón igual */
+#igual {
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-weight: bold;
+    height: calc(100% + 3px); /* Ajuste para igualar la altura de 4 filas */
+}
+
+/* Estilo del botón de limpiar */
+#vaciar {
+    background-color: #f0a0a0;
+    color: #ffffff;
+}
+
+/* Cambios de color al hacer hover */
+td:hover {
+    background-color: #d3d3d3;
+}
+
+#igual:hover {
+    background-color: #357ab7;
+}
+
+#vaciar:hover {
+    background-color: #d97a7a;
+}
