@@ -1,0 +1,49 @@
+table {
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: #5a9bd3; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    font-family: "Arial", sans-serif;
+    color: white;
+    border: 1px solid white;
+}
+
+
+#ganador {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: "Arial", sans-serif;
+    color: white;
+    background-color: #5a9bd3; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4682b4; 
+}
+
+
