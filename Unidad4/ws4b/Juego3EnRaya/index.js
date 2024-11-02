@@ -18,16 +18,30 @@ window.onload = () => {
     btn[0].addEventListener('click', () => {
         casillas.forEach(casilla => reiniciarJuego(casilla));
     });
+
+    btn[1].addEventListener('click', () => {
+        casillas.forEach(casilla => siguienteRonda(casilla))
+    })
 }
 
 var jugador = true;
+var jugadorX = 0;
+var jugadorO = 0;
 
 function colocarPiesas(casilla){
     if(casilla.innerText === "" && !document.getElementById("ganador").innerText){
-        casilla.innerText = jugador ? "X" : "0";    
+        casilla.innerText = jugador ? "X" : "O";    
 
         if(ganador()){
-            document.getElementById("ganador").innerText = `Ha ganado ${jugador ? "X" : "0"}`;
+            document.getElementById("ganador").innerText = `Ha ganado ${jugador ? "X" : "O"}`;
+            
+            if(jugador){
+                jugadorX++;
+                document.getElementById("jugadorX").innerText = `Jugador X = ${jugadorX}`;
+            }else{
+                jugadorO++;
+                document.getElementById("jugadorO").innerText = `Jugador O = ${jugadorO}`;
+            }
         }else{
         jugador = !jugador;
         }
@@ -66,10 +80,17 @@ function ganador(){
     );
 }
 
+function siguienteRonda(casilla){
+    casilla.innerText = "";
+    document.getElementById("ganador").innerText = "";
+    jugador = true;
+}
 
 function reiniciarJuego(casilla){
     casilla.innerText = "";
     document.getElementById("ganador").innerText = "";
     jugador = true;
+    jugadorO = 0;
+    jugadorX = 0;
 }
 

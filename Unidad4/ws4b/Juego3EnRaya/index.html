@@ -8,24 +8,34 @@
 </head>
 <body>
     <h1 id="ganador"></h1>
-    <table>
-        <tr>
-            <td id="casilla1"></td>
-            <td id="casilla2"></td>
-            <td id="casilla3"></td>
-        </tr>
-        <tr>
-            <td id="casilla4"></td>
-            <td id="casilla5"></td>
-            <td id="casilla6"></td>
-        </tr>
-        <tr>
-            <td id="casilla7"></td>
-            <td id="casilla8"></td>
-            <td id="casilla9"></td>
-        </tr>
-    </table>
-    <button>Reiniciar Juego</button>
+    <div class="juegoContenedor">
+        <table>
+            <tr>
+                <td id="casilla1"></td>
+                <td id="casilla2"></td>
+                <td id="casilla3"></td>
+            </tr>
+            <tr>
+                <td id="casilla4"></td>
+                <td id="casilla5"></td>
+                <td id="casilla6"></td>
+            </tr>
+            <tr>
+                <td id="casilla7"></td>
+                <td id="casilla8"></td>
+                <td id="casilla9"></td>
+            </tr>
+        </table>
+        <div class="informacion">
+            <h2 id="jugadorX">Jugador X: 0</h2>
+            <h2 id="jugador0">Jugador O: 0</h2>
+        </div>
+    </div>
+        <div class="botones">
+            <button>Reiniciar Partida</button>
+            <button>Siguiente Ronda</button>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
