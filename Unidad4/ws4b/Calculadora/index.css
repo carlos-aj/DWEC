@@ -1,4 +1,3 @@
-/* Centrado de la calculadora */
 body {
     display: flex;
     justify-content: center;
@@ -9,7 +8,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Estilo de la calculadora */
 table {
     border-collapse: collapse;
     width: 240px;
@@ -19,7 +17,6 @@ table {
     overflow: hidden;
 }
 
-/* Estilo del display */
 #resultado {
     height: 50px;
     font-size: 1.5em;
@@ -29,7 +26,6 @@ table {
     border: none;
 }
 
-/* Estilos de los botones */
 td {
     width: 60px;
     height: 60px;
@@ -41,26 +37,23 @@ td {
     transition: background-color 0.2s;
 }
 
-/* Estilo de los botones de operaciones */
 #suma, #resta, #multiplicacion, #division {
     background-color: #e0e0e0;
 }
 
-/* Estilo del botón igual */
 #igual {
     background-color: #4a90e2;
     color: #ffffff;
     font-weight: bold;
-    height: calc(100% + 3px); /* Ajuste para igualar la altura de 4 filas */
+    height: calc(100% + 3px); 
 }
 
-/* Estilo del botón de limpiar */
 #vaciar {
     background-color: #f0a0a0;
     color: #ffffff;
 }
 
-/* Cambios de color al hacer hover */
+
 td:hover {
     background-color: #d3d3d3;
 }

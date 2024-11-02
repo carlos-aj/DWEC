@@ -41,6 +41,8 @@
                 if (boton.id === "igual") {
                     const total = terminarOperacion(boton.id, valor1, valor2, operacion);
                     document.getElementById("resultado").innerText = total;
+                    valor1 = total.toString();
+                    valor2 = ""; 
                 } else if (boton.id === "vaciar") {
                     valor1 = "";
                     valor2 = "";
@@ -48,6 +50,9 @@
                     document.getElementById("resultado").innerText = "";
                 } else {
                     operacion = seleccionarOperacion(boton.id);
+                    if (valor1 !== "") {
+                        valor2 = ""; 
+                    }
                 }
             }));
         }
