@@ -92,5 +92,7 @@ function reiniciarJuego(casilla){
     jugador = true;
     jugadorO = 0;
     jugadorX = 0;
+    document.getElementById("jugadorX").innerText = "jugador X: 0"
+    document.getElementById("jugadorO").innerText = "jugador O: 0"
 }
 
