@@ -1,9 +1,11 @@
-const btn = document.getElementsByTagName("button");
+window.addEventListener('deviceorientation', handleOrientation);
 
-function cambiarColor(){
-    document.body.style.backgroundColor = "red";
+function handleOrientation(event) {
+  const alpha = event.alpha;
+  const beta = event.beta;
+  const gamma = event.gamma;
+
+  document.getElementById("alpha").innerText = alpha;
+  document.getElementById("beta").innerText = beta;
+  document.getElementById("gamma").innerText = gamma;
 }
-
-btn[0].addEventListener("click", cambiarColor);
-btn[1].addEventListener("click", ()=> document.body.style.backgroundColor="blue");
-btn[2].addEventListener("click", () => btn[0].removeEventListener("click",cambiarColor))

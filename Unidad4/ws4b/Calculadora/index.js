@@ -116,7 +116,7 @@
     function terminarOperacion(id, valor1, valor2, operacion){
         if (id === "igual") {
             if (operacion === "/" && parseFloat(valor2) === 0) {
-                return "Error: División por 0";
+                return "Error: División entre 0";
             } else {
                 return eval(`${parseFloat(valor1)} ${operacion} ${parseFloat(valor2)}`);
             }
