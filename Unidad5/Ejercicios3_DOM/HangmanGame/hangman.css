@@ -1,0 +1,95 @@
+/* hangman.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d4f06d;
+    color: #fff;
+}
+
+#contenedor {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cabecera h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+#cabecera h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#botones table {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#botones td {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#botones td:hover {
+    background-color: #ddd;
+}
+
+#pista {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#pista:hover {
+    background-color: #ddd;
+}
+
+#categoria {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+#letras {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#letras div {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    padding: 0 10px;
+}
+
+#vidas {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}

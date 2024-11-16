@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #80d3f4; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+div {
+    width: 100%;
+    max-width: 600px; 
+}
+
+#cabecera {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.time {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 10px;
+}
+
+td {
+    width: 100px;
+    height: 150px;
+    background: white;
+    background-size: cover; 
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+td:hover {
+    transform: scale(1.05);
+}
+
+#victoria {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}

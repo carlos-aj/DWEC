@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedor {
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#introduccion form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#intro {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#introbtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#introbtn:hover {
+    background-color: #0056b3;
+}
+
+#lista {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.elemento:hover {
+    background-color: #f8f9fa;
+}
+
+.elemento.marcado {
+    text-decoration: line-through;
+    color: #28a745;
+    background-color: #e9f7ef;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    width: 20px; /* Tamaño de los íconos */
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-icon:hover {
+    transform: scale(1.2); /* Efecto de zoom */
+}
+
+#borrarLista {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+#borrarLista:hover {
+    color: #c82333;
+}
