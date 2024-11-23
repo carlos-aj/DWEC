@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pong.css">
+</head>
+<body>
+    <div>
+        <svg id="contenedor" width="1510" height="700" xmlns="http://www.w3.org/2000/svg">
+            <text id="jugador1" x="580" y="80" fill="white" font-size="36">0</text>
+            <text id="jugador2" x="930" y="80" fill="white" font-size="36">0</text>
+            <line x1="755" y1="0" x2="755" y2="700" stroke="white" stroke-width="10" stroke-dasharray="20,20"/>
+            <rect id="barra1" width="40" height="150" x="30" y="20" rx="20" ry="20" fill="grey" stroke="white" stroke-width="5"/>
+            <rect id="barra2" width="40" height="150" x="1430" y="480" rx="20" ry="20" fill="grey" stroke="white" stroke-width="5"/>
+            <circle id="pelota" r="25" cx="755" cy="350" fill="grey" stroke="white" stroke-width="3"/>
+        </svg>
+    </div>
+    <script src="pong.js"></script>
+</body>
+</html>

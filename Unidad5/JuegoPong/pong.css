@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+#contenedor{
+    border: 5px solid white;
+}
+
+.rectangulo{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+#marcador{
+    color: white;
+}
+
