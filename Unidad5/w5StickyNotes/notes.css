@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;          
+    overflow: hidden;       
+}
+
+#contenedorDiv {
+    position: relative;
+    width: 1510px;     
+    height: 700px;     
+}
+
+#contenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#entrada {
+    position: absolute;      
+    top: 50%;      
+    left: 50%;     
+    transform: translate(-50%, -50%);
+    background: white;       
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;     
+    padding: 20px;           
+    width: 400px;           
+    text-align: center;     
+}
+
+h1 {
+    color: #343a40;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;              
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;       
+}
+
+input, textarea, button {
+    border: 1px solid #ced4da; 
+    border-radius: 5px;        
+    padding: 10px;             
+    font-size: 1em;            
+}
+
+textarea {
+    resize: none; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;            
+    border: none;             
+    cursor: pointer;          
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+.note {
+    position: absolute;
+    background: #fffacd;
+    border: 1px solid #f0e68c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    cursor: grab;
+    width: 200px;  /* Tamaño ajustado a 300px */
+    height: 200px; /* Tamaño ajustado a 300px */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.note h4,
+.note p {
+    margin: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    outline: none;
+    line-height: 1.2;
+}
+
+.note p {
+    flex-grow: 1; /* Permitir que el contenido ocupe espacio */
+    overflow-y: auto; /* Habilitar barra de scroll para el contenido */
+    padding-right: 5px; /* Espacio para la barra de desplazamiento */
+}
+
+.note .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.note .close:hover {
+    color: red;
+}
